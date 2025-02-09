@@ -1,7 +1,7 @@
-# Angular2025
+Proyecto: Angular2025
 Curso Angular de cero a experto
 
-Instalaciones 2025:
+Instalaciones iniciales:
 
 1º- Instalar Node.JS (comprobar: node --version)
 2º- Visual Studio Code
@@ -65,21 +65,6 @@ git pull origin main
 git add .
 git commit -m "Curso Angular 2025"
 git push -u origin main
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
