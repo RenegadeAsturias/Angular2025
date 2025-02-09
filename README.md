@@ -54,8 +54,9 @@ git config --global user.email "<<email>>" )
 E inicializo el proyecto para utilizar Git:
 git init
 
-4º Me creo el remoto apuntando al proyecto de GitHub
+4º Me creo el remoto apuntando al proyecto de GitHub y establezco la rama principal
 git remote add origin https://github.com/RenegadeAsturias/Angular2025.git
+git branch -M main
 
 5º Y actualizo el proyecto local con el proyecto remoto
 git pull origin main
