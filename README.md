@@ -43,13 +43,15 @@ Tema VSCode
 
 ======================================================
 
-1º Me creo el proyecto en GitHub
-2º Configuro mis credenciales de Git en la máquina virtual:
-git config --global user.name "<<usuario>>" )
+1º Me creo el proyecto en GitHub: Angular2025
+
+2º Por ejemplo desde el terminal de Bash del VSCode
+configuro mis credenciales de Git en la máquina virtual:
+git config --global user.name "<<usuario>>"
 git config --global user.email "<<email>>" )
 
 3º Me creo el proyecto en el VSCode
-Inicializo el proyecto:
+E inicializo el proyecto para utilizar Git:
 git init
 
 4º Me creo el remoto apuntando al proyecto de GitHub
