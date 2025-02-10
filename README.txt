@@ -69,6 +69,13 @@ git push -u origin main
 
 ======================================================
 
+Nota de actualización:
+Desde Angular v17, por defecto los proyectos trabajan sin módulos (module-less)
+Pero para trabajar de forma tradicional como lo vieron en el curso:
+ng new <nombre de la aplicación> --standalone false
+
+======================================================
+
 Nota importante sobre: Angular 17
 
 Vamos a empezar el curso trabajando con la forma tradicional que es con módulos.
@@ -83,7 +90,26 @@ Por eso, de momento cuando creemos nuevas aplicaciones en el curso, escribiremos
 ng new mi-primera-app --standalone false  <== para trabajar con módulos.
 ?Which stylesheet format would you like to use? CSS
 ?Do you want to enable Server-Side Rendering (SSR) and Static Site Generation
-(SSR/Prerendering) N <== No
+(SSR/Prerendering) N <== No (Se verá con posterioridad en el curso)
+
+
+======================================================
+
+Creación de mi primera aplicación con Angular 
+$ ng new 02-bases --no-standalone
+
+Effective status: enabled
+✔ Which stylesheet format would you like to use? CSS
+? Do you want to enable Server-Side Rendering (SSR) 
+and Static Site Generation (SSG/Prerendering)? (y/N) N
+
+Para que se ejecute la aplicación y se abra
+$ cd 02-bases/
+$ ng serve -o
+
+
+
+
 
 
 
