@@ -67,4 +67,34 @@ git commit -m "Curso Angular 2025"
 git push -u origin main
 
 
+======================================================
+
+Nota importante sobre: Angular 17
+
+Vamos a empezar el curso trabajando con la forma tradicional que es con módulos.
+
+En la documentación actual, se ha añadido una nueva opción por defecto
+para trabajar sin módulos: --standalone
+en la creación de nuevas aplicaciones que se creen.
+
+Por eso, de momento cuando creemos nuevas aplicaciones en el curso, escribiremos:
+
+
+ng new mi-primera-app --standalone false  <== para trabajar con módulos.
+?Which stylesheet format would you like to use? CSS
+?Do you want to enable Server-Side Rendering (SSR) and Static Site Generation
+(SSR/Prerendering) N <== No
+
+
+
+
+
+
+
+
+
+
+
+
+
 
