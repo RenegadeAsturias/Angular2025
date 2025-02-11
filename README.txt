@@ -105,22 +105,34 @@ and Static Site Generation (SSG/Prerendering)? (y/N) N
 
 Para que se ejecute la aplicación y se abra
 $ cd 02-bases/
-$ ng serve -o
+$ ng serve -o | o también npm start
 
 
+======================================================
 
+Creamos nuestros primeros módulo con CLI:
 
+ng g c [name] | ng g component [name] 
+ng g c [path/name] | ng g component [path/name]
 
+$ ng g c contador
+CREATE src/app/contador/contador.component.html (24 bytes)
+CREATE src/app/contador/contador.component.spec.ts (634 bytes)
+CREATE src/app/contador/contador.component.ts (239 bytes)
+CREATE src/app/contador/contador.component.css (0 bytes)
+UPDATE src/app/app.module.ts (685 bytes)
 
+$ ng g c heroes/heroe
+CREATE src/app/heroes/heroe/heroe.component.html (21 bytes)
+CREATE src/app/heroes/heroe/heroe.component.spec.ts (613 bytes)
+CREATE src/app/heroes/heroe/heroe.component.ts (227 bytes)
+CREATE src/app/heroes/heroe/heroe.component.css (0 bytes)
+UPDATE src/app/app.module.ts (498 bytes)
 
-
-
-
-
-
-
-
-
-
-
+$ ng g c heroes/listado
+CREATE src/app/heroes/listado/listado.component.html (23 bytes)
+CREATE src/app/heroes/listado/listado.component.spec.ts (627 bytes)
+CREATE src/app/heroes/listado/listado.component.ts (235 bytes)
+CREATE src/app/heroes/listado/listado.component.css (0 bytes)
+UPDATE src/app/app.module.ts (593 bytes)
 
