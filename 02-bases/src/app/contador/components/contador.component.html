@@ -1,6 +1,10 @@
 <br/>
 <p>Contador {{contador}}</p>
 
+<ng-template #mostrarAviso>
+  <b>Aviso:</b> Podrá añadir nuevas opciones si el contador es superior a 15.
+</ng-template>
+
 <div class="row">
   <div class="col-md-3">
     <button class="btn btn-primary" (click)="incrementar(+1)">+1</button>&nbsp;&nbsp;
@@ -9,3 +13,28 @@
   </div>
   <div class="col-md-9"></div>
 </div>
+
+<br/>Opciones:<br/>
+<ul class="option-group">
+  <li class="option-group-item">Uno</li>
+  <li class="option-group-item">Dos</li>
+  <li class="option-group-item">Tres</li>
+  <li class="option-group-item">Cuatro</li>
+</ul>
+
+
+<div>
+  <button
+    *ngIf="this.contador>15; else mostrarAviso"
+    class="btn btn-primary" (click)="aniadirNuevaOpcion()">Añadir Opción</button>
+</div>
+
+<br/>&nbsp;<br/>&nbsp;
+
+<ul class="mt-2 list-group">
+  <li *ngFor="let numero of listadoNumeros"
+      class="list-group-item">{{numero}}
+  </li>
+<ul>
+
+<br/>&nbsp;<br/>&nbsp;

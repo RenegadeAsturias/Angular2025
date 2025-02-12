@@ -1,7 +1,7 @@
 import { NgModule } from "@angular/core";
 import { ListadoComponent } from "./componentes/listado/listado.component";
-import { ContadorComponent } from "../contador/components/contador.component";
 import { HeroeComponent } from "./componentes/heroe/heroe.component";
+import { CommonModule } from "@angular/common";
 
 @NgModule ({
   declarations: [
@@ -11,6 +11,8 @@ import { HeroeComponent } from "./componentes/heroe/heroe.component";
   exports: [
     HeroeComponent,
     ListadoComponent
+  ], imports: [
+    CommonModule
   ]
 })
 export class HeroesModule { }

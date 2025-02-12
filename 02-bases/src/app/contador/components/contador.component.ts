@@ -12,9 +12,20 @@ export class ContadorComponent {
 
   incrementar(valor:number):void {
     this.contador += valor;
+
+    if(valor>0) this.listadoNumeros.push("Número "+this.contador);
+    if(valor<0) this.listadoNumeros.pop();
   }
 
   reiniciar():void {
     this.contador = 10;
+    this.listadoNumeros=[];
   }
+
+  aniadirNuevaOpcion(): void {
+    console.log("Aniade opción!");
+  }
+
+  public listadoNumeros: string[] = ["INICIO","FIN"];
+
 }

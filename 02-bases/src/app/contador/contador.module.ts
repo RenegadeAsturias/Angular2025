@@ -1,5 +1,6 @@
 import { NgModule } from "@angular/core";
 import { ContadorComponent } from "./components/contador.component";
+import { CommonModule } from "@angular/common";
 
 @NgModule ({
   declarations: [
@@ -7,6 +8,9 @@ import { ContadorComponent } from "./components/contador.component";
   ],
   exports: [
     ContadorComponent
+  ],
+  imports: [
+    CommonModule
   ]
 })
 export class ContadorModule { }
