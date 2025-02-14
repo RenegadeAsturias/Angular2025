@@ -178,5 +178,23 @@ export class MainPageComponent { }
 
 ======================================================
 
+Creamos un nuevo componente para el listado de dbz
+Creamos un nuevo componente para añadir un personaje de dbz
+
+$ ng g c dbz-list
+CREATE src/app/dbz/components/dbz-list/dbz-list.component.html (24 bytes)
+CREATE src/app/dbz/components/dbz-list/dbz-list.component.spec.ts (628 bytes)
+CREATE src/app/dbz/components/dbz-list/dbz-list.component.ts (238 bytes)
+CREATE src/app/dbz/components/dbz-list/dbz-list.component.css (0 bytes)
+UPDATE src/app/dbz/dbz.module.ts (434 bytes)
+
+ ng g c dbz-add-personaje
+CREATE src/app/dbz/components/dbz-add-personaje/dbz-add-personaje.component.html (33 bytes)
+CREATE src/app/dbz/components/dbz-add-personaje/dbz-add-personaje.component.spec.ts (685 bytes)
+CREATE src/app/dbz/components/dbz-add-personaje/dbz-add-personaje.component.ts (273 bytes)
+CREATE src/app/dbz/components/dbz-add-personaje/dbz-add-personaje.component.css (0 bytes)
+UPDATE src/app/dbz/dbz.module.ts (569 bytes)
+
+
 
 
