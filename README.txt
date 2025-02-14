@@ -64,7 +64,7 @@ git pull origin main
 6º Actualizo el README y actualizo los cambios locales en el remoto
 git add .
 git commit -m "Curso Angular 2025"
-git push -u origin main
+git push -u origin main 
 
 
 ======================================================
@@ -110,7 +110,7 @@ $ ng serve -o | o también npm start
 
 ======================================================
 
-Creamos nuestros primeros módulo con CLI:
+Creamos nuestros primeros componentes con CLI:
 
 ng g c [name] | ng g component [name] 
 ng g c [path/name] | ng g component [path/name]
@@ -135,4 +135,48 @@ CREATE src/app/heroes/listado/listado.component.spec.ts (627 bytes)
 CREATE src/app/heroes/listado/listado.component.ts (235 bytes)
 CREATE src/app/heroes/listado/listado.component.css (0 bytes)
 UPDATE src/app/app.module.ts (593 bytes)
+
+======================================================
+
+Ahora queremos meter los componentes en un módulo
+-Un módulo para el componente del contador
+-Y Otro módulo para los componentes de héroes (héroe+listado)
+-Y finalmente importar los módulos en el AppModule
+
+
+======================================================
+
+Crear un nuevo módulo para Dragon Ball Z
+
+ng g m dbz (ng generate module dbz)
+
+Y creamos en la carpeta nuevas carpetas para futuros cambios:
+
+mkdir components
+mkdir interfaces
+mkdir pages
+mkdir services
+
+Las pages son componentes que se utilizan con el routing
+y que contienen otros componentes.
+
+Creamos nuestro componente de tipo pages, esta vez lo creamos manualmente:
+
+pages/main-page.component.ts (podemos también utilizar los snipets para crear la estructura)
+pages/main-page.component.html
+
+El decorador, lo dejamos como:
+@Component({
+	selector: 'app-dbz-main-page',
+	templateUrl: 'main-page.component.html'
+})
+export class MainPageComponent { }
+
++app.component.html
+<app-dbz-main-page></app-dbz-main-page>
+
+
+======================================================
+
+
 
