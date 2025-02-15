@@ -195,6 +195,42 @@ CREATE src/app/dbz/components/dbz-add-personaje/dbz-add-personaje.component.ts (
 CREATE src/app/dbz/components/dbz-add-personaje/dbz-add-personaje.component.css (0 bytes)
 UPDATE src/app/dbz/dbz.module.ts (569 bytes)
 
+======================================================
+
+Decoradores de clase para componentes
+
+@Input: Define una propiedad que puede ser enviada desde el padre
+hacia el compoente hijo. (@angular/core)
+@Input() myProperty;
+Ejemplo:
+<my-cmp [myProperty]="somExpression">
+
+======================================================
+
+Ejemplo:
+Defino en el componente hijo una propiedad con un valor por defecto.
+De tal forma que si esta propiedad recibe el valor de la propiedad
+desde el componente padre se machacará el valor que contenga.
+Y sino su valor será el valor por defecto.
+
+Ejemplo, declaramos en el componente hijo: dbz-list.component.ts
+
+@Input()
+public listaPersonajes: Personaje[] = [{
+	name: 'Trunks',
+	power: 10
+}];
+
+Ejemplo, desde el template del componente padre asignamos valores 
+a la propiedad [listaPersonajes]
+y le asignamos el contenido de la variable "personajes"
+que machaca el valor por defecto.
+
+<h4>DBZ Personajes</h4>
+<hr/>
+<div class="row">
+  <div class="col">
+    <dbz-list [listaPersonajes]="personajes"></dbz-list>
 
 
 
