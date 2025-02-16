@@ -66,6 +66,8 @@ git add .
 git commit -m "Curso Angular 2025"
 git push -u origin main 
 
+--Para recuper la info
+git pull origin	main
 
 ======================================================
 
