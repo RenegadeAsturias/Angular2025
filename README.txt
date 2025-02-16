@@ -234,3 +234,22 @@ que machaca el valor por defecto.
 
 
 
+======================================================
+
+Expandimos el ngFor, dejamos ejemplos en el templete:
+dbz-list.component.expande.ngFor.html
+
+======================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
