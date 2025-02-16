@@ -1,5 +1,10 @@
 <h4>Listado</h4>
 <ul class="list-group">
-  <li *ngFor="let personaje of listaPersonajes" class="list-group-item">
-      {{personaje.name}} - power: {{personaje.power}}</li>
+  <li *ngFor="let personaje of listaPersonajes"
+    class="list-group-item d-flex justify-content-between align-items-center">
+    <div>
+      {{personaje.name}} - power: {{personaje.power}}
+    </div>
+    <button class="btn btn-danger">X</button>
+  </li>
 </ul>

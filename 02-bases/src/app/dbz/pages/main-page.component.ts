@@ -23,7 +23,8 @@ export class MainPageComponent {
     }
   ];
 
-
-
+  onNewPersonaje(personaje: Personaje):void {
+    this.personajes.push(personaje);
+  }
 
 }

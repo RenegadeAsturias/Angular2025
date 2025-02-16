@@ -234,14 +234,79 @@ que machaca el valor por defecto.
   <div class="col">
     <dbz-list [listaPersonajes]="personajes"></dbz-list>
 
-
-
 ======================================================
 
 Expandimos el ngFor, dejamos ejemplos en el templete:
-dbz-list.component.expande.ngFor.html
+dbz-list.component.1expande.ngFor.html
 
 ======================================================
+
+ngClass: Enlaza clases de css basado en un objeto o expresión:
+
+<div [ngClass]="{'active':isActive, 'disabled':isDisabled}">
+
+Dejamos ejemplos en el templete:
+dbz-list.component.2ngClass.html
+
+======================================================
+
+FormsModule y ngModel
+
+FormsModule de @angular/FormsModule
+<input [(ngModel)]="username">
+
+======================================================
+
+@Output()
+Emitir eventos al padre
+Define una salida del componente que el componente padre
+puede suscribirse para escuchar.
+@Output() (myEvent) = new EventEmitter();
+Ejemplo:
+<my-cmp (myEvent)="somExpression">
+
+---- DEFINIMOS EN EL COMPONENTE HIJO ------------------------------
+
+@Output()
+public onNewPersonaje: EventEmitter<Personaje> = new EventEmitter();
+
+<form class="row" (ngSubmit)="emitPersonaje()">
+
+emitPersonaje():void {
+	this.onNewPersonaje.emit(this.personaje);
+}
+
+---- DEFINIMOS EN EL COMPONENTE PADRE ------------------------------
+
+En: main-page.component.html
+Establecemos que el componente hijo escucha emisiones de tipo: onNewPersonaje
+Y cuando las emite llamamos a una función javascript del padre pasándole el evento.
+Con $event Angular ya sabe de qué tipo es el objeto que viaja.
+
+<div class="col">
+	<dbz-add-personaje (onNewPersonaje)="onNewPersonaje($event)"></dbz-add-personaje>
+</div>
+
+En: main-page.component.ts
+onNewPersonaje(personaje: Personaje):void {
+	console.log({personaje});
+}
+
+======================================================
+
+======================================================
+
+======================================================
+
+======================================================
+
+
+
+
+
+
+
+
 
 
 

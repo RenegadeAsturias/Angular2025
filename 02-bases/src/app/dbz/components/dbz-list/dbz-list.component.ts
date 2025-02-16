@@ -10,11 +10,13 @@ import { Personaje } from '../../interfaces/personaje.interface';
 export class DbzListComponent {
 
   @Input()
-  public listaPersonajes: Personaje[] = [
-    {
+  public listaPersonajes: Personaje[] = [{
       name: 'Trunks',
       power: 10
-    }
-  ];
+  }];
+
+  onDeletePersonaje():void {
+    // TODO: Emitir el ID del personaje
+  }
 
 }
