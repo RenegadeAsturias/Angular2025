@@ -3,7 +3,7 @@
 <hr/>
 <div class="row">
   <div class="col">
-    <dbz-list [listaPersonajes]="personajes"></dbz-list>
+    <dbz-list [listaPersonajes]="personajes" (onDeletePersonajeId)="onDeletePersonajeId($event)"></dbz-list>
   </div>
   <div class="col">
     <dbz-add-personaje (onNewPersonaje)="onNewPersonaje($event)"></dbz-add-personaje>
